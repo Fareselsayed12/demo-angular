@@ -1,0 +1,40 @@
+.contact{
+    padding-top: 90px;
+}
+h2, .icon {
+    color: #2C3E50;
+}
+
+.icon {
+    background-color: white;
+}
+.icon::before, .icon::after {
+    background-color: #2C3E50;
+}
+button{
+    width: fit-content;
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #DFE2E6;
+    outline: none;
+    position: relative;
+}
+label{
+    color: #1ABC9C;
+    position: absolute;
+    bottom: 50%;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+.show{
+    bottom: 100%;
+}

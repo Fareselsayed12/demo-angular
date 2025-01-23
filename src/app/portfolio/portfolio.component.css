@@ -1,0 +1,46 @@
+.portfolio {
+    padding-top: 50px;
+}
+h2, .icon {
+    color: #2C3E50;
+}
+
+.icon {
+    background-color: white;
+}
+.icon::before, .icon::after {
+    background-color: #2C3E50;
+}
+.image{
+    cursor: pointer;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(26, 188, 156, 0.9);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image i{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image:hover::before,
+.image:hover i{
+    opacity: 1;
+}
+
+button{
+    outline: none;
+}

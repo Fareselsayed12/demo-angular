@@ -1,0 +1,13 @@
+nav {
+    background-color: #2C3E50;
+    transition: .3s;
+}
+nav a {
+    color: white;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 6px;
+}
+.padding {
+    padding: 50px 0;
+}

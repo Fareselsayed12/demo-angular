@@ -1,0 +1,54 @@
+<div class="container contact">
+  <div class="title text-center text-white position-relative">
+    <h2 class="display-5 fw-bold my-3 text-uppercase">conatct section</h2>
+    <div class="icon my-3">
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+  <form
+    class="my-5 d-flex flex-column w-50 mx-auto"
+    (submit)="onSubmit($event)"
+  >
+    <div class="username position-relative mb-3">
+      <label for="name" [class.show]="userName">userName:</label>
+      <input
+        type="text"
+        id="name"
+        name="userName"
+        placeholder="userName"
+        [(ngModel)]="userName"
+      />
+    </div>
+    <div class="age position-relative mb-3">
+      <label for="age" [class.show]="userAge">userAge:</label>
+      <input
+        type="number"
+        id="age"
+        name="userAge"
+        placeholder="userAge"
+        [(ngModel)]="userAge"
+      />
+    </div>
+    <div class="mail position-relative mb-3">
+      <label for="mail" [class.show]="userEmail">userEmail:</label>
+      <input
+        type="email"
+        id="mail"
+        name="userEmail"
+        placeholder="userEmail"
+        [(ngModel)]="userEmail"
+      />
+    </div>
+    <div class="password position-relative mb-3">
+      <label for="password" [class.show]="userPassword">userPassword:</label>
+      <input
+        type="password"
+        id="password"
+        name="userPassword"
+        placeholder="userPassword"
+        [(ngModel)]="userPassword"
+      />
+    </div>
+    <button type="submit">send Message</button>
+  </form>
+</div>

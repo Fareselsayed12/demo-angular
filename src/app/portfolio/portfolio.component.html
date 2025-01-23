@@ -1,0 +1,96 @@
+<div class="container position-relative portfolio">
+  <div class="title text-center text-white position-relative portfolio">
+    <h2 class="display-5 fw-bold my-3 text-uppercase">Portfolio Component</h2>
+    <div class="icon my-4">
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+  <div class="row my-5 g-4">
+    @for (num of count; track $index) {
+    <div class="col-md-4">
+      <div
+        class="modal fade"
+        id="imgOne"
+        tabindex="-1"
+        aria-labelledby="imgOneLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="/images/poert1.png" alt="img1" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="border-0 bg-white"
+        data-bs-toggle="modal"
+        data-bs-target="#imgOne"
+      >
+        <div class="image position-relative rounded overflow-hidden">
+          <img src="/images/poert1.png" alt="img1" class="img-fluid" />
+          <i class="fa-solid fa-plus position-absolute"></i>
+        </div>
+      </button>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="modal fade"
+        id="imgTwo"
+        tabindex="-1"
+        aria-labelledby="imgTwoLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="/images/port2.png" alt="img2" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="border-0 bg-white"
+        data-bs-toggle="modal"
+        data-bs-target="#imgTwo"
+      >
+        <div class="image position-relative rounded overflow-hidden">
+          <img src="/images/port2.png" alt="img2" class="img-fluid" />
+          <i class="fa-solid fa-plus position-absolute"></i>
+        </div>
+      </button>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="modal fade"
+        id="imgThree"
+        tabindex="-1"
+        aria-labelledby="imgThreeLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="/images/port3.png" alt="img3" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="border-0 bg-white"
+        data-bs-toggle="modal"
+        data-bs-target="#imgThree"
+      >
+        <div class="image position-relative rounded overflow-hidden">
+          <img src="/images/port3.png" alt="img3" class="img-fluid" />
+          <i class="fa-solid fa-plus position-absolute"></i>
+        </div>
+      </button>
+    </div>
+    }
+  </div>
+</div>
